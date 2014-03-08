@@ -1,5 +1,7 @@
 <?php
 
+include_once('mysql.php') ;
+include_once('admin.php') ;
 include_once('common.php') ;
 $option = 'home' ;
 if(isset($_REQUEST['page'])){

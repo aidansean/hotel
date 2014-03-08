@@ -4,7 +4,7 @@ $mySQL_connection = mysql_connect('localhost', $mysql_username, $mysql_password)
 mysql_select_db($mysql_database) or die('Could not select database') ;
 
 if(isset($_POST['username'])){
-  if($_POST['username']==$admin_username AND $_POST['password']==$admin_password){
+  if($_POST['username']==$admin_username AND md5($_POST['password'])==$admin_password){
     $keys = array_keys($_POST) ;
     foreach($keys as $key){
       if(substr_count($key,'booking_')==1){
@@ -201,7 +201,7 @@ for($week=0 ; $week<$nWeeks ; $week++){
 <?php
 
 if(isset($_POST['username'])){
-  if($_POST['username']==$admin_username AND $_POST['password']==$admin_password){
+  if($_POST['username']==$admin_username AND md5($_POST['password'])==$admin_password){
     echo '<h2>Admin summary</h2>'                  , PHP_EOL ;
     echo '<form method="post" action="index.php">' , PHP_EOL ;
     echo '<table id="summaryTable">'               , PHP_EOL ;
@@ -243,8 +243,8 @@ if(isset($_POST['username'])){
     echo '<td class="summary"></td><td class="summary"></td><td class="summary"></td><td class="summary"></td><td class="summary"></td><td class="summary"><input type="submit" name="admin" value="Apply changes"/></td>' , PHP_EOL ;
     echo '  </tbody>' , PHP_EOL ;
     echo '</table>' , PHP_EOL ;
-    echo '<input type="hidden" name="username" value="' , $_POST['username'] , '" />' , PHP_EOL ;
-    echo '<input type="hidden" name="password" value="' , $_POST['password'] , '" />' , PHP_EOL ;
+    echo '<input type="hidden" name="username" value="" />' , PHP_EOL ;
+    echo '<input type="hidden" name="password" value="" />' , PHP_EOL ;
     echo '<input type="hidden" name="nWeeks" value="' , $nWeeks , '"/>' , PHP_EOL ;
     echo '<input type="hidden" name="page"   value="book"/>' , PHP_EOL ;
     echo '</form>' , PHP_EOL ;
