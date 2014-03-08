@@ -1,0 +1,242 @@
+body, p
+{
+  font-family : arial , sans-serif ;
+  font-size : 12pt ;
+  line-height : 18pt ;
+  text-align : justify ;
+}
+body
+{
+  background-color : #ccffcc ;
+}
+div#container
+{
+  width : 800px ;
+  margin : auto ;
+  border : 1px solid black ;
+}
+div#outer_container
+{
+  width : 804px ;
+  margin : auto ;
+  border : 1px solid black ;
+  padding : 2px ;
+  background-color : white ;
+}
+div#heading
+{
+  width : 100% ;
+  padding : 0px ;
+  border-bottom : 0px solid black ;
+}
+div#content
+{
+  padding : 20px ;
+}
+h1, h2, h3, h4, h5, h6
+{
+  font-family : georgia , serif ;
+  font-style : italic ;
+  text-align : center ;
+}
+
+/* Taken from http://css.maxdesign.com.au/listamatic/horizontal03.htm */
+#navcontainer ul
+{
+  padding-left: 0;
+  margin : 0px ;
+  margin-left: 0;
+  background-color: #063;
+  color: White;
+  float: left;
+  width: 100%;
+  font-family: arial, helvetica, sans-serif;
+}
+#navcontainer ul li { display: inline; }
+#navcontainer ul li a
+{
+  padding: 0.2em 1em;
+  background-color: #063;
+  color: White;
+  text-decoration: none;
+  float: left;
+  border-right: 1px solid #fff;
+}
+#navcontainer ul li a:hover
+{
+  background-color: #396;
+  color: #fff;
+}
+#currentNavButton
+{
+  background-color: #fff;
+  color: #036;
+}
+
+#flags ul li { display: inline; }
+li.flag
+{
+  width : 200px;
+  text-align : center ;
+}
+
+th.calendar, td.calendar
+{
+  width  : 100px ;
+  height : 60px ;
+  border : 1px solid black ;
+  text-align : center ;
+}
+th.calendar
+{
+  height : 20px ;
+  border: 2px solid black ;
+}
+td.calendar
+{
+  font-family : arial , sans-serif ;
+  font-size : 8pt ;
+  vertical-align : middle ;
+}
+
+td.color0Available{ background-color : #ffa ; }
+td.color1Available{ background-color : #aaf ; }
+
+td.color0Unavailable{ background-color : #ffd ; border : 0px solid black ; }
+td.color1Unavailable{ background-color : #ddf ; border : 0px solid black ; }
+
+td.color0Requested{ background-color : #ffa ; }
+td.color1Requested{ background-color : #aaf ; }
+
+td.color0Booked{ background-color : #fed ; border : 2px solid black ; }
+td.color1Booked{ background-color : #dff ; border : 2px solid black ; }
+
+table#bookingTable
+{
+  width : 100% ;
+  margin : auto ;
+  margin-bottom : 10px ;
+}
+th.bookingTable
+{
+  background-color : #ddffdd ;
+  text-align : right ;
+  padding : 2px ;
+  width : 200px ;
+}
+td.bookingTable
+{
+  background-color : #ddffee ;
+  text-align : left ;
+  padding : 2px ;
+  width : 500px ;
+}
+
+span.resetDate
+{
+  text-decoration : underline ;
+  color : blue ;
+}
+
+td.selectedNight
+{
+  background-color : #dfd ;
+  border : 2px solid green ;
+}
+
+td.selectedNightClash
+{
+  background-color : #fdd ;
+  border : 2px solid red ;
+}
+
+td.selectedNightDoubleRequest
+{
+  background-color : #fdf ;
+  border : 2px solid magenta ;
+}
+
+table#summaryTable
+{
+  width : 700px ;
+  margin : auto ;
+  margin-top : 20px ;
+}
+
+td.summary, th.summary
+{
+  text-align : center ;
+  font-family : arial , sans-serif ;
+  font-size : 10pt ;
+}
+
+tr.requested{ background-color : #ffffdd ; }
+tr.booked   { background-color : #ddffdd ; }
+tr.rejected { background-color : #ffdddd ; }
+
+img.thumbnail
+{
+  border : 1px solid black ;
+  width : 200px ;
+  margin : auto ;
+}
+table#gallery
+{
+  width : 660px ;
+  margin : auto ;
+}
+td.gallery
+{
+  width : 200px ;
+  padding : 10px ;
+  text-align : center ;
+  font-size : 10pt ;
+  vertical-align : top ;
+}
+
+div.map_container
+{
+  text-align : center ;
+  margin : 10px ;
+}
+iframe.map
+{
+  border : 1px solid black ;
+}
+iframe#local_area_map
+{
+  width : 600px ;
+  height : 400px ;
+  margin : auto ;
+}
+table.center{ margin : auto ; }
+
+table#contact_table
+{
+  width : 600px ;
+  margin : auto ;
+}
+th.contact
+{
+  text-align : right ;
+  vertical-align : top ;
+}
+
+table#power
+{
+  width : 400px ;
+  margin : auto ;
+  border : 1px solid blue ;
+}
+th.power
+{
+  background-color : blue ;
+  color : white ;
+  width : 200px ;
+  text-align : center ;
+}
+td.power
+{
+  width : 200px ;
+  text-align : center ;
+}
