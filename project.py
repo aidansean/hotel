@@ -3,9 +3,13 @@ from project_module import project_object, image_object, link_object, challenge_
 p = project_object('hotel', 'L\'Hotel d\'Aidan')
 p.domain = 'http://www.aidansean.com/'
 p.path = 'hotel'
-p.preview_image_ = image_object('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg', 408, 287)
+p.preview_image    = image_object('%s/images/project.jpg'   %p.path, 150, 250)
+p.preview_image_bw = image_object('%s/images/project_bw.jpg'%p.path, 150, 250)
+p.folder_name = 'aidansean'
 p.github_repo_name = 'hotel'
 p.mathjax = False
+p.tags = 'Tools'
+p.technologies = 'CSS,HTML,JavaScript,MySQL,PHP'
 p.links.append(link_object(p.domain, 'hotel', 'Live page'))
 p.introduction = 'When I was living near Geneva I had a spare room and many people came to visit for work or leisure.  To make it easier to keep track of who was visiting when I created a page where people could book my spare room.'
 p.overview = '''This project makes extensive use of Javascript, PHP and a MySQL backend.  The user interacts by selecting HTML elements, which change dynamically based on the interactions.  Data is sent to the server via POST requests, which are then parsed via PHP and stored to a MySQL table.  The status of the data can be updated via a custom made admin panel.  Whenever a request is made, an email is sent to alert the admin.  This project had its own standalone HTML wrapper, and enabled the admin to add several pages containing additional information.  Bookings were requested using a custom made calendar interface.'''

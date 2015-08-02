@@ -21,16 +21,3 @@ This project makes extensive use of Javascript, PHP and a MySQL backend.  The us
 
 <dd><em>Solution</em>: The admin panel is accessed via a simple login function,  At the time the password was trivially checked against plain text stored in a PHP file.  However if this project is to b used again it should be checked against at least a hashed password stored in a PHP file.  As usual, the MySQL and password settings are not shared publically. (Resolved, to be revisited)</dd>
 </dl>
-
-<h3>Challenges</h3>
-<dl>
-<dt><em>Challenge</em>: Dynamic user interaction had to be monitored carefully.</dt>
-
-<dd><em>Solution</em>: The user interaction is monitired using Javascript and the HTML elements dynamically changed via the DOM.  The status of a booking changes depending on the current state in the database and how the user interacts.  Interaction required updating multiple elements (eg several succesive days.) (Resolved)</dd>
-<dt><em>Challenge</em>: The booking system required a functional and intuitive calendar interface.</dt>
-
-<dd><em>Solution</em>: This project was one of the first time I had to create a calendar interface from first principles.  Given that the differences in time took place in a single timezone this was relatively straightforward, although string paring initially presented some difficulties. (Resolved)</dd>
-<dt><em>Challenge</em>: The booking system required an admin panel.</dt>
-
-<dd><em>Solution</em>: The admin panel is accessed via a simple login function,  At the time the password was trivially checked against plain text stored in a PHP file.  However if this project is to b used again it should be checked against at least a hashed password stored in a PHP file.  As usual, the MySQL and password settings are not shared publically. (Resolved, to be revisited)</dd>
-</dl>
